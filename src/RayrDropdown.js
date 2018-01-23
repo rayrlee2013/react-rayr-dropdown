@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
-import $_ajax from 'ajax.js';
 
 class RayrDropdown extends React.Component {
     constructor(props){
@@ -21,9 +20,9 @@ class RayrDropdown extends React.Component {
     }
 
     componentWillMount() {
-        if(this.props.model){
-            this.fetchData();
-        }
+        // if(this.props.model){
+        //     this.fetchData();
+        // }
     }
 
     componentWillReceiveProps(nextProps) {
@@ -83,31 +82,6 @@ class RayrDropdown extends React.Component {
             selected: opt
         });
         this.hideSelectList();
-    }
-
-    // 获取数据的方法
-    fetchData() {
-        let url = 'dictionaries';
-        $_ajax.get(url, {subject: this.props.model , all: 1}).then((res)=>{
-            console.log(res.data);
-            let rawList = res.data;
-            let list = [];
-            rawList.map((item, index)=>{
-                list.push({
-                    value: item.id,
-                    label: item.name
-                });
-            });
-            this.setState({
-                list: list
-            });
-
-        }).catch((e)=>{
-            console.log(e);
-            $_notify(e);
-        }).finally(()=>{
-            console.log('finally');
-        });
     }
 
     // 选择框
