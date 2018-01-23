@@ -1,4 +1,4 @@
-import 'react-rayr-btn/src/RayrDropdown.scss';
+import 'react-rayr-dropdown/src/RayrDropdown.scss';
 
 import 'babel-polyfill';
 import React from 'react';

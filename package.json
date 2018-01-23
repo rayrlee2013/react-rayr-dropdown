@@ -1,6 +1,6 @@
 {
   "name": "react-rayr-dropdown",
-  "version": "0.0.2",
+  "version": "0.0.1",
   "description": "react-rayr-dropdown",
   "main": "lib/index.js",
   "scripts": {
@@ -69,7 +69,7 @@
     "type": "git",
     "url": "https://github.com/rayrlee2013/react-rayr-dropdown.git"
   },
-  "author": "lilei",
+  "author": "luokaihui",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/rayrlee2013/react-rayr-dropdown/issues"
