@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
-// import 'RayrDropdown.scss';
+import $_ajax from 'ajax.js';
 
 class RayrDropdown extends React.Component {
     constructor(props){
