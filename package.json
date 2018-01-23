@@ -1,7 +1,7 @@
 {
-  "name": "react-rayr-btn",
+  "name": "react-rayr-dropdown",
   "version": "0.0.2",
-  "description": "react-rayr-btn",
+  "description": "react-rayr-dropdown",
   "main": "lib/index.js",
   "scripts": {
     "start": "cross-env NODE_ENV=development babel-node example/webpack.server.js --hot",
@@ -12,7 +12,7 @@
     "react-component",
     "react",
     "component",
-    "react-rayr-btn"
+    "react-rayr-dropdown"
   ],
   "dependencies": {
     "classnames": "^2.2.5",
@@ -67,12 +67,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/rayrlee2013/react-rayr-btn.git"
+    "url": "https://github.com/rayrlee2013/react-rayr-dropdown.git"
   },
   "author": "lilei",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/rayrlee2013/react-rayr-btn/issues"
+    "url": "https://github.com/rayrlee2013/react-rayr-dropdown/issues"
   },
-  "homepage": "https://github.com/rayrlee2013/react-rayr-btn"
+  "homepage": "https://github.com/rayrlee2013/react-rayr-dropdown"
 }

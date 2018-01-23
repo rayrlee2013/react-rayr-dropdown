@@ -1,0 +1,104 @@
+.d-drop-box {
+  position: relative;
+}
+
+.d-drop-box .select-box {
+  cursor: pointer;
+  font-size: 0;
+}
+
+.d-drop-box .select-box .select-box-ip {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  outline: none;
+  -webkit-appearance: none;
+  background-color: #fff;
+  background-image: none;
+  border-radius: 4px;
+  border: 1px solid #dcdfe6;
+  box-sizing: border-box;
+  color: #606266;
+  display: inline-block;
+  font-size: 14px;
+  height: 40px;
+  line-height: 1;
+  padding: 0 15px;
+  transition: border-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  width: 100%;
+}
+
+.d-drop-box .select-box .select-box-ip:hover {
+  border-color: #5797FB;
+}
+
+.d-drop-box .opts-list {
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  border: 1px solid #e4e7ed;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  margin: 5px 0;
+  transition: border-color .2s;
+  z-index: 1;
+}
+
+.d-drop-box .opts-list[pos="bottom"] {
+  top: 40px;
+}
+
+.d-drop-box .opts-list[pos="top"] {
+  bottom: 40px;
+}
+
+.d-drop-box .opts-list.show {
+  display: block !important;
+}
+
+.d-drop-box .opts-list.hide {
+  display: none !important;
+}
+
+.d-drop-box .opts-list:hover {
+  border-color: #5797FB;
+}
+
+.d-drop-box .opts-list .select-opts {
+  list-style: none;
+  padding: 6px 0;
+  margin: 0;
+  box-sizing: border-box;
+  max-height: 200px;
+  overflow-y: scroll;
+}
+
+.d-drop-box .opts-list .select-opts .select-item {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 14px;
+  padding: 0 20px;
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #606266;
+  height: 34px;
+  line-height: 34px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.d-drop-box .opts-list .select-opts .select-item.selected {
+  color: #5797FB;
+}
+
+.d-drop-box .opts-list .select-opts .select-item:hover {
+  background-color: #f5f7fa;
+}
