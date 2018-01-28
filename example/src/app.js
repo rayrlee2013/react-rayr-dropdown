@@ -3,7 +3,42 @@ import 'react-rayr-dropdown/src/RayrDropdown.scss';
 import 'babel-polyfill';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {RayrDropdown} from 'react-rayr-dropdown';
+import {RayrDropdown, Dropdown} from 'react-rayr-dropdown';
+
+class DropTitle extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {};
+    }
+
+    render() {
+        return (
+            <div className="dropdown-title">
+                <h1>下拉框-头部内容</h1>
+            </div>
+        );
+    }
+}
+
+class DropBody extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {};
+    }
+
+    clickMain() {
+        // alert('click something!');
+    }
+
+    render() {
+        return (
+            <div className="dropdown-body">
+                <h1 onClick={this.clickMain}>Dropdown 主体部分</h1>
+                <p>主体部分|DROPDOWN</p>
+            </div>
+        );
+    }
+}
 
 function App() {
     // 测试数据
@@ -49,6 +84,21 @@ function App() {
                 />
                 <div id="result1" className="item-result"></div>
             </div>
+
+            <Dropdown
+                className = {"dropdown"}
+                titleEle= {<DropTitle />}
+                contentEle = {<DropBody />}
+            >
+            </Dropdown>
+
+            {/* <Dropdown
+                className = {"dropdown"}
+                titleEle= {<DropTitle />}
+                contentEle = {<DropBody />}
+            >
+            </Dropdown> */}
+
             <div className="item-box" style={{width: "250px",position: "relative", top: "600px"}}>
                 <RayrDropdown 
                     list={list2}
